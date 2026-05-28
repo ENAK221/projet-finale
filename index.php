@@ -71,20 +71,20 @@
         background: radial-gradient(ellipse at 70% 50%, rgba(99,102,241,.25) 0%, transparent 60%);
         pointer-events:none;
     }
-    .hero-promo {
+    .hero-tag {
         display:inline-flex; align-items:center; gap:.5rem;
-        background:rgba(245,158,11,.15); color:var(--orange);
-        border:1px solid rgba(245,158,11,.4);
+        background:rgba(96,165,250,.15); color:#93c5fd;
+        border:1px solid rgba(96,165,250,.3);
         border-radius:20px; padding:.3rem .9rem;
-        font-size:.8rem; font-weight:700; letter-spacing:.8px;
+        font-size:.78rem; font-weight:700; letter-spacing:1px;
         text-transform:uppercase; margin-bottom:1.2rem;
     }
-    .hero-promo i { font-size:.75rem; }
+    .hero-tag i { font-size:.72rem; }
     .hero h1 {
         font-size:3rem; font-weight:800; color:#fff;
         line-height:1.15; margin-bottom:1.2rem;
     }
-    .hero h1 span { color:var(--orange); }
+    .hero h1 span { color:#60a5fa; }
     .hero-sub { font-size:1.05rem; color:#94a3b8; line-height:1.7; margin-bottom:2rem; }
     .hero-btns { display:flex; gap:.8rem; flex-wrap:wrap; margin-bottom:2rem; }
     .btn-hero-primary {
@@ -105,10 +105,20 @@
         transition:background .2s, transform .15s;
     }
     .btn-hero-ghost:hover { background:rgba(255,255,255,.2); transform:translateY(-2px); }
-    .hero-stats { display:flex; gap:2rem; }
-    .hero-stat { text-align:center; }
-    .hero-stat strong { display:block; font-size:1.6rem; font-weight:800; color:#fff; }
-    .hero-stat span { font-size:.78rem; color:#94a3b8; }
+    .hero-stats {
+        display:flex; gap:0;
+        background:rgba(255,255,255,.06);
+        border:1px solid rgba(255,255,255,.1);
+        border-radius:14px; overflow:hidden;
+        margin-top:2.5rem;
+    }
+    .hero-stat {
+        flex:1; text-align:center; padding:1rem .5rem;
+        border-right:1px solid rgba(255,255,255,.08);
+    }
+    .hero-stat:last-child { border-right:none; }
+    .hero-stat strong { display:block; font-size:1.5rem; font-weight:800; color:#fff; }
+    .hero-stat span { font-size:.72rem; color:#94a3b8; text-transform:uppercase; letter-spacing:.5px; }
     .hero-img-wrap { position:relative; }
     .hero-img-wrap img {
         width:100%; max-height:400px; object-fit:cover;
@@ -118,17 +128,18 @@
     }
     .hero-badge-float {
         position:absolute; bottom:-16px; left:-16px;
-        background:#fff; border-radius:14px;
-        padding:.8rem 1.2rem; box-shadow:var(--shadow-h);
+        background:#1e40af; border-radius:14px;
+        padding:.8rem 1.2rem; box-shadow:0 8px 24px rgba(30,64,175,.4);
         display:flex; align-items:center; gap:.7rem;
+        border:1px solid rgba(255,255,255,.15);
     }
     .hero-badge-float .badge-icon {
-        width:40px; height:40px; background:#ecfdf5;
+        width:40px; height:40px; background:rgba(96,165,250,.2);
         border-radius:10px; display:flex; align-items:center; justify-content:center;
-        color:#059669; font-size:1.1rem;
+        color:#93c5fd; font-size:1.1rem;
     }
-    .hero-badge-float strong { display:block; font-size:.88rem; font-weight:700; color:var(--dark); }
-    .hero-badge-float span { font-size:.75rem; color:var(--gray); }
+    .hero-badge-float strong { display:block; font-size:.88rem; font-weight:700; color:#fff; }
+    .hero-badge-float span { font-size:.75rem; color:#93c5fd; }
 
     /* ── FEATURES BAR ── */
     .features-bar {
@@ -302,17 +313,18 @@
 <!-- ── HERO ── -->
 <section class="hero">
     <div class="hero-content">
-        <div class="hero-promo"><i class="fas fa-bolt"></i> Promo du jour</div>
+        <div class="hero-tag"><i class="fas fa-check-circle"></i> Livraison à Dakar</div>
         <h1>Faites vos courses<br>avec <span>ToolBiTrading</span></h1>
         <p class="hero-sub">Produits frais, sanitaires et boissons — sélection premium, livraison rapide à Dakar, paiement sécurisé.</p>
         <div class="hero-btns">
-            <a href="shop.php" class="btn-hero-primary"><i class="fas fa-shopping-bag"></i> Acheter maintenant</a>
-            <a href="category.php" class="btn-hero-ghost"><i class="fas fa-th-large"></i> Nos catégories</a>
+            <a href="shop.php"     class="btn-hero-primary"><i class="fas fa-shopping-bag"></i> Acheter maintenant</a>
+            <a href="category.php" class="btn-hero-ghost"  ><i class="fas fa-th-large"></i>    Nos catégories</a>
         </div>
         <div class="hero-stats">
             <div class="hero-stat"><strong>+500</strong><span>Produits</span></div>
-            <div class="hero-stat"><strong>24-48h</strong><span>Livraison</span></div>
+            <div class="hero-stat"><strong>24–48h</strong><span>Livraison</span></div>
             <div class="hero-stat"><strong>100%</strong><span>Sécurisé</span></div>
+            <div class="hero-stat"><strong>7j/7</strong><span>Support</span></div>
         </div>
     </div>
     <div class="hero-img-wrap">

@@ -25,10 +25,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
-    <!-- font awesome cdn link  -->
+    <!-- lien CDN Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <!-- custom css file link  -->
+    <!-- lien fichier CSS personnalisé -->
     <link rel="stylesheet" href="css/style.css">
     <style>
     .hero {
@@ -82,7 +82,7 @@
         </div>
     </section>
 
-    <!-- Featured products carousel -->
+    <!-- carrousel produits en vedette -->
     <section class="section-block">
         <div class="section-head">
             <div>
@@ -124,7 +124,7 @@
         </div>
     </section>
 
-    <!-- Categories cards -->
+    <!-- cartes catégories -->
     <section class="section-block">
         <div class="section-head">
             <div>
@@ -166,7 +166,7 @@
         </div>
     </section>
 
-    <!-- home products section starts -->
+    <!-- début section produits accueil -->
 
     <section class="home-products">
     <h1 class="heading">ELECTRONIQUE</h1>
@@ -253,7 +253,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- custom js file link  -->
+    <!-- lien fichier JS personnalisé -->
     <script src="js/script.js"></script>
 
     <script>

@@ -48,10 +48,10 @@ if(isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
 
-    <!-- font awesome cdn link -->
+    <!-- lien CDN Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <!-- custom css file link -->
+    <!-- lien fichier CSS personnalisé -->
     <link rel="stylesheet" href="../css/admin_style.css">
 
     <style>
@@ -98,7 +98,7 @@ if(isset($_POST['submit'])) {
 include '../components/admin_header.php';
 ?>
 
-<!-- register admin section starts  -->
+<!-- début section inscription administrateur -->
 <section class="form-container">
     <form action="" method="post">
         <h3>Inscription</h3>
@@ -121,7 +121,7 @@ include '../components/admin_header.php';
     </form>
 </section>
 
-<!-- custom js file link -->
+<!-- lien fichier JS personnalisé -->
 <script src="../js/admin_script.js"></script>
 </body>
 </html>

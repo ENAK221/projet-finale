@@ -51,10 +51,10 @@ if (isset($_SESSION['success_message'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
 
-    <!-- font awesome cdn link  -->
+    <!-- lien CDN Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <!-- custom css file link  -->
+    <!-- lien fichier CSS personnalisé -->
     <link rel="stylesheet" href="css/style.css">
 
     <style>
@@ -115,7 +115,7 @@ if (isset($_SESSION['success_message'])) {
 
 <?php include 'components/user_header.php'; ?>
 
-<!-- user login section starts -->
+<!-- début section connexion -->
 <section class="form-container">
     <form action="" method="post">
         <h3>Connexion</h3>
@@ -142,7 +142,7 @@ if (isset($_SESSION['success_message'])) {
 
 <?php include 'components/footer.php'; ?>
 
-<!-- custom js file link  -->
+<!-- lien fichier JS personnalisé -->
 <script src="js/script.js"></script>
 </body>
 </html>

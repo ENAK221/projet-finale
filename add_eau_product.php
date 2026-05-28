@@ -3,7 +3,7 @@ session_start();
 include 'components/connect.php';
 
 if (!isset($_SESSION['admin'])) {
-    header('Location: admin_login.php');
+    header('Location: admin/admin_login.php');
     exit;
 }
 

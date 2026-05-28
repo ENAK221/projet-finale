@@ -29,7 +29,7 @@ if (isset($_POST['mark_as_delivered'])) {
     $update_order = $conn->prepare("UPDATE `orders` SET payment_status = 'Livré' WHERE order_id = ?");
     $update_order->execute([$order_id]);
 
-    header('Location: Home.php');
+    header('Location: home.php');
     exit;
 }
 ?>

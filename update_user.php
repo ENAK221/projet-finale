@@ -10,7 +10,7 @@
     else
     {
         $user_id = '';
-        header('location:home.php');
+        header('location:index.php');
     }
 
     if(isset($_POST['submit']))

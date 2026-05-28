@@ -6,7 +6,7 @@
     if (isset($_SESSION['user_id'])) {
         $user_id = $_SESSION['user_id'];
     } else {
-        header('location:home.php');
+        header('location:index.php');
         exit();
     }
 

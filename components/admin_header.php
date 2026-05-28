@@ -15,16 +15,16 @@
 
 <header class="header">
     <section class="flex">
-        <a href="/projet-finale/admin/dashboard.php" class="logo">Admin<span>Panel</span></a>
+        <a href="dashboard.php" class="logo">Admin<span>Panel</span></a>
 
         <nav class="navbar">
-            <a href="/projet-finale/admin/dashboard.php">Accueil</a>
-            <a href="/projet-finale/admin/products.php">Produits</a>
-            <a href="/projet-finale/admin/placed_orders.php">Commandes</a>
-            <a href="/projet-finale/admin/livreur.php">Livreurs</a>
-            <a href="/projet-finale/admin/admin_accounts.php">Admins</a>
-            <a href="/projet-finale/admin/user_accounts.php">Utilisateurs</a>
-            <a href="/projet-finale/admin/messages.php">Messages</a>
+            <a href="dashboard.php">Accueil</a>
+            <a href="products.php">Produits</a>
+            <a href="placed_orders.php">Commandes</a>
+            <a href="livreur.php">Livreurs</a>
+            <a href="admin_accounts.php">Admins</a>
+            <a href="user_accounts.php">Utilisateurs</a>
+            <a href="messages.php">Messages</a>
         </nav>
 
         <div class="icons">
@@ -42,9 +42,9 @@
 
             <p><?= $fetch_profile['name']; ?></p>
 
-            <a href="/projet-finale/admin/update_profile.php" class="btn">Mise a Jour Profile</a>
+            <a href="update_profile.php" class="btn">Mise à jour Profil</a>
 
-            <a href="/projet-finale/components/admin_logout.php" class="delete-btn" onclick="return confirm('Voulez vous vraiment se deconnecter');">Deconnexion</a>
+            <a href="../components/admin_logout.php" class="delete-btn" onclick="return confirm('Voulez-vous vraiment vous déconnecter ?');">Déconnexion</a>
 
         </div>
 

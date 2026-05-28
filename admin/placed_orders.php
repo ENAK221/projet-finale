@@ -7,6 +7,7 @@
     if(!isset($admin_id))
     {
         header('location:admin_login.php');
+        exit;
     }
 
     // Fonction pour formater la date en français
@@ -103,7 +104,7 @@
             <p> Numéro Commande : <span><?= $fetch_orders['order_id']; ?></span> </p>
             <p> Date de Livraison : <span><?= formatDate($fetch_orders['delivery_date']); ?></span> </p>
             <!-- <p> ID Utilisateur : <span><?= $fetch_orders['user_id']; ?></span> </p> -->
-            <p> Date Commande : <span><?= formatDate($fetch_orders['order_date']); ?></span> </p>
+            <p> Date Commande : <span><?= htmlspecialchars($fetch_orders['order_date'] ?? $fetch_orders['delivery_date']); ?></span> </p>
             <p> Prénom : <span><?= $fetch_orders['name']; ?></span> </p>
             <p> Nom : <span><?= $fetch_orders['surname']; ?></span> </p>
             <!-- <p> Email : <span><?= $fetch_orders['email']; ?></span> </p> -->
@@ -130,7 +131,7 @@
             <a href="placed_orders.php?delete=<?= $fetch_orders['order_id']; ?>" class="delete-btn" onclick="return confirm('Supprimer cette commande ?');">Supprimer</a>
         <?php endif; ?>
         
-        <a href="./generate_pdf.php?order_id=<?= $fetch_orders['order_id']; ?>" class="btn">Voir Facture</a>
+        <a href="../livreur/generate_pdf.php?order_id=<?= $fetch_orders['order_id']; ?>" class="btn">Voir Facture</a>
     </div>
 </form>
 

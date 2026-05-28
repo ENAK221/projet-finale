@@ -6,6 +6,7 @@ $admin_id = $_SESSION['admin_id'];
 
 if(!isset($admin_id)) {
     header('location:admin_login.php');
+    exit;
 }
 
 if(isset($_POST['submit'])) {
